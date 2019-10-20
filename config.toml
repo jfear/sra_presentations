@@ -1,6 +1,6 @@
 # Site settings
-baseurl = "https://jfear.github.io/sra_presntations/"
-title = "SRA Prsentations"
+baseurl = "https://geneticsunderground.com/sra_presntations/"
+title = "SRA Presentations"
 theme = "story"
 
 [[menu.social]]
