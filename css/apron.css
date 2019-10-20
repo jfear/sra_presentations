@@ -350,6 +350,9 @@ html {
   left: 50%;
   margin-left: -50px;
 }
+.remark-slide-content .header li:nth-child(3) {
+  right: 20px;
+}
 .remark-slide-content .header li img,
 .remark-slide-content .footer li img {
   display: block;

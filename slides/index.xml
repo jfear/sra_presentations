@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Slides on SRA Presentations</title><link>https://geneticsunderground.com/sra_presentations/slides/</link><description>Recent content in Slides on SRA Presentations</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://geneticsunderground.com/sra_presentations/slides/index.xml" rel="self" type="application/rss+xml"/><item><title>NISC Talk</title><link>https://geneticsunderground.com/sra_presentations/slides/nisc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://geneticsunderground.com/sra_presentations/slides/nisc/</guid><description> class: title background-image: url(cover.jpg)
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Slides on SRA Presentations</title><link>https://geneticsunderground.com/sra_presentations/slides/</link><description>Recent content in Slides on SRA Presentations</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://geneticsunderground.com/sra_presentations/slides/index.xml" rel="self" type="application/rss+xml"/><item><title>NISC Talk</title><link>https://geneticsunderground.com/sra_presentations/slides/nisc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://geneticsunderground.com/sra_presentations/slides/nisc/</guid><description>class: title background-image: url(cover.jpg)
 Re-annotating the Drosophila Testis&amp;rsquo; Transcriptome .footer[ - October 23, 2019 - @NISC ]
-.center[Justin M. Fear] .fl.db.w-50pct[ - IRTA Fellow (NIDDK/NIH) - Genomics - Gene Regulation - Drosophilist
+.center[Justin M. Fear] .header[ - About ]
+.fl.db.w-50pct[ - IRTA Fellow (NIDDK/NIH) - Genomics - Gene Regulation - Drosophilist
 ]
 .fr.db.w-50pct[ - Contact: - jfear - justin.fear@nih.gov - geneticsunderground.com ]
+&amp;ndash;
 Project Code .fl.db.w-50pct[
 SRA
 jfear/ncbi_remap ] .fr.db.w-50pct[
@@ -10,5 +12,4 @@ PacBio
 jfear/dmel_pacbio
 jfear/dmel_larval_pacbio ]
 layout: true
-.header[ - Introduction ]
-Drosophila melanogaster</description></item></channel></rss>
+.header[ - Introduction ]</description></item></channel></rss>
