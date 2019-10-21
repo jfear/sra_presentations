@@ -49,7 +49,6 @@ background-image: url(cover.jpg)
 ### Project Code
 
 .fl.db.w-50pct[
-
 **SRA**
 
 <i class="fab fa-github"></i>jfear/ncbi_remap
@@ -74,17 +73,32 @@ layout: true
 
 # *Drosophila melanogaster*
 
-<!-- Picture so Male/Female Fly and Ovary/Testis -->
+<!-- Adults -->
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5oqRRU4VBMcihHWePJ4ngAJYD7JasuAsw3Ydc-pdPxNMBw8sh# w-6-12th db absolute l-0 t-4)
+![](https://www.genetics.org/content/genetics/208/3/875/F4.large.jpg# w-2-12th db absolute l-2 b-2)
+![](https://www.g3journal.org/content/ggg/7/9/3145/F1.large.jpg# w-2-12th db absolute l-3-12th b-2)
 
-<!-- Genome summary highlighting -->
+<!-- larva -->
+![](https://www.barnardhealth.us/drosophila-melanogaster/images/2057_109_50-drosophila-larvae-slide.jpg# w-40pct db absolute r-2 t-2)
+![](/sra_presentations/images/larval_testis.png# w-40pct db absolute b-1 r-2)
+
+---
+
+# Drosophila genome
+
+![](/sra_presentations/images/drosophila_genome.png# w-70pct center db absolute)
 
 ---
 
 # Testis Biased Gene Expression
 
-<!-- DEG picture of Whole Body (M vs F) -->
-<!-- DEG picture of Whole Body (M vs F) no gonad -->
+.fl.db.w-40pct[Most differences between males and females is due to testis-biased expression.]
 
+![](/sra_presentations/images/testis_biased_expression.png# db w-50pct fr)
+
+.footer[
+- Parisi et al. 2003. *Science*
+]
 ---
 
 # Objectives
@@ -105,33 +119,69 @@ layout: true
 
 ---
 
-# Sequence Read Archive (SRA)
+# Drosophila Sequence Read Archive
 
-<!-- Overview of SRA -->
+![](/sra_presentations/images/insdc.svg# w-60pct fl)
+
+--
+
+.fs-150.fr[
+| Strategy      | Count  |
+| ------------- | ------ |
+| RNA-Seq       | 20,420 |
+| DNA-Seq       | 8,007  |
+| ChIP-Seq      | 5,898  |
+| Other         | 21,629 |
+| **Completed** | 43,692 |
+]
 
 ---
 
-# Re-processing Workflow
+# SraMongo
 
-<!-- Pre-alignment and alignment workflows -->
-
----
-
-# Metadata Workflow
-
-<!-- Metadata processing -->
+![](/sra_presentations/images/sramongo_website.png)
 
 ---
 
-# Testis RNA-Seq
+# .dn[Re-processing Workflow]
+
+![](/sra_presentations/images/aln_workflow.svg)
+
+---
+
+# Alignment Workflow cont.
+
+![](/sra_presentations/images/mapping.svg)
+
+---
+
+# .dn[Metadata Workflow]
+
+![](/sra_presentations/images/downstream_biometa.svg)
+
+---
+
+# Testis RNA-Seq (109 samples)
 
 <!-- Summary of testis RNA-Seq data -->
+![](/sra_presentations/images/testis_selection.svg)
+
+---
+
+# StringTie
+
+.w-30pct.db[Testis RNA-Seq data is used to assembly testis-specific transcriptome.]
+
+![](/sra_presentations/images/stringtie.png# w-70pct absolute t-0 r-0)
+<!-- Stringtie assembly info -->
+
+.footer[
+- Pertea et al. 2015. *Nature Biotechnology*
+]
 
 ---
 
 # Testis Assembly
-
-<!-- Stringtie assembly info -->
 
 ---
 
@@ -147,7 +197,13 @@ layout: true
 
 # PacBio Samples
 
-<!-- PacBio Experimental Design -->
+| sample            | machine | # FLNC |
+| ----------------- | ------- | ------ |
+| Adult male        | Sequell | 10101  |
+| Adult testis R1   | Sequell | 10101  |
+| Adult testis R2   | Sequell | ---    |
+| Larval testis TR1 | Sequell | 10101  |
+| Larval testis TR2 | Sequell | ---    |
 
 ---
 
