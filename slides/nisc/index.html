@@ -38,7 +38,6 @@ background-image: url(cover.jpg)
 ### Project Code
 
 .fl.db.w-50pct[
-
 **SRA**
 
 &lt;i class=&#34;fab fa-github&#34;&gt;&lt;/i&gt;jfear/ncbi_remap
@@ -63,17 +62,32 @@ layout: true
 
 # *Drosophila melanogaster*
 
-&lt;!-- Picture so Male/Female Fly and Ovary/Testis --&gt;
+&lt;!-- Adults --&gt;
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5oqRRU4VBMcihHWePJ4ngAJYD7JasuAsw3Ydc-pdPxNMBw8sh# w-6-12th db absolute l-0 t-4)
+![](https://www.genetics.org/content/genetics/208/3/875/F4.large.jpg# w-2-12th db absolute l-2 b-2)
+![](https://www.g3journal.org/content/ggg/7/9/3145/F1.large.jpg# w-2-12th db absolute l-3-12th b-2)
 
-&lt;!-- Genome summary highlighting --&gt;
+&lt;!-- larva --&gt;
+![](https://www.barnardhealth.us/drosophila-melanogaster/images/2057_109_50-drosophila-larvae-slide.jpg# w-40pct db absolute r-2 t-2)
+![](/sra_presentations/images/larval_testis.png# w-40pct db absolute b-1 r-2)
+
+---
+
+# Drosophila genome
+
+![](/sra_presentations/images/drosophila_genome.png# w-70pct center db absolute)
 
 ---
 
 # Testis Biased Gene Expression
 
-&lt;!-- DEG picture of Whole Body (M vs F) --&gt;
-&lt;!-- DEG picture of Whole Body (M vs F) no gonad --&gt;
+.fl.db.w-40pct[Most differences between males and females is due to testis-biased expression.]
 
+![](/sra_presentations/images/testis_biased_expression.png# db w-50pct fr)
+
+.footer[
+- Parisi et al. 2003. *Science*
+]
 ---
 
 # Objectives
@@ -94,33 +108,69 @@ layout: true
 
 ---
 
-# Sequence Read Archive (SRA)
+# Drosophila Sequence Read Archive
 
-&lt;!-- Overview of SRA --&gt;
+![](/sra_presentations/images/insdc.svg# w-60pct fl)
+
+--
+
+.fs-150.fr[
+| Strategy      | Count  |
+| ------------- | ------ |
+| RNA-Seq       | 20,420 |
+| DNA-Seq       | 8,007  |
+| ChIP-Seq      | 5,898  |
+| Other         | 21,629 |
+| **Completed** | 43,692 |
+]
 
 ---
 
-# Re-processing Workflow
+# SraMongo
 
-&lt;!-- Pre-alignment and alignment workflows --&gt;
-
----
-
-# Metadata Workflow
-
-&lt;!-- Metadata processing --&gt;
+![](/sra_presentations/images/sramongo_website.png)
 
 ---
 
-# Testis RNA-Seq
+# .dn[Re-processing Workflow]
+
+![](/sra_presentations/images/aln_workflow.svg)
+
+---
+
+# Alignment Workflow cont.
+
+![](/sra_presentations/images/mapping.svg)
+
+---
+
+# .dn[Metadata Workflow]
+
+![](/sra_presentations/images/downstream_biometa.svg)
+
+---
+
+# Testis RNA-Seq (109 samples)
 
 &lt;!-- Summary of testis RNA-Seq data --&gt;
+![](/sra_presentations/images/testis_selection.svg)
+
+---
+
+# StringTie
+
+.w-30pct.db[Testis RNA-Seq data is used to assembly testis-specific transcriptome.]
+
+![](/sra_presentations/images/stringtie.png# w-70pct absolute t-0 r-0)
+&lt;!-- Stringtie assembly info --&gt;
+
+.footer[
+- Pertea et al. 2015. *Nature Biotechnology*
+]
 
 ---
 
 # Testis Assembly
-
-&lt;!-- Stringtie assembly info --&gt;
 
 ---
 
@@ -136,7 +186,13 @@ layout: true
 
 # PacBio Samples
 
-&lt;!-- PacBio Experimental Design --&gt;
+| sample            | machine | # FLNC |
+| ----------------- | ------- | ------ |
+| Adult male        | Sequell | 10101  |
+| Adult testis R1   | Sequell | 10101  |
+| Adult testis R2   | Sequell | ---    |
+| Larval testis TR1 | Sequell | 10101  |
+| Larval testis TR2 | Sequell | ---    |
 
 ---
 
@@ -215,5 +271,5 @@ class: compact
 - Susan Russo
 ]
 </textarea>
-<script type=text/javascript src=https://geneticsunderground.com/sra_presentations/js/qrcode.js></script><script src=https://geneticsunderground.com/sra_presentations/js/remark.js></script><script>var slideshow=remark.create({ratio:"16:9",navigation:{scroll:false},countIncrementalSlides:false,slideNumberFormat:'%current%',highlightLanguage:"xaprb",placeholder:"dummy value to end the list without a comma"});$(".remark-slide-content.fit-h1 h1").each(function(i,e){var $e=$(e);var $p=$e.closest('div.remark-slide-container');var needsToggle=!$p.hasClass('remark-visible');if(needsToggle)$p.toggleClass('remark-visible');while(e.scrollHeight>e.clientHeight+1&&$e.css('font-size')!='1px'){$e.css('font-size',(parseInt($e.css('font-size'))-1)+"px");}
+<script type=text/javascript src=https://geneticsunderground.com/sra_presentations/js/qrcode.js></script><script src=https://geneticsunderground.com/sra_presentations/js/remark.js></script><script src=https://geneticsunderground.com/sra_presentations/js/remark-zoom.js></script><script>var slideshow=remark.create({ratio:"16:9",navigation:{scroll:false},countIncrementalSlides:false,slideNumberFormat:'%current%',highlightLanguage:"xaprb",placeholder:"dummy value to end the list without a comma"});$(".remark-slide-content.fit-h1 h1").each(function(i,e){var $e=$(e);var $p=$e.closest('div.remark-slide-container');var needsToggle=!$p.hasClass('remark-visible');if(needsToggle)$p.toggleClass('remark-visible');while(e.scrollHeight>e.clientHeight+1&&$e.css('font-size')!='1px'){$e.css('font-size',(parseInt($e.css('font-size'))-1)+"px");}
 if(needsToggle)$p.toggleClass('remark-visible');});$(function(){if($("body.feature-qrcode:not(.feature-noqrcode)").length){if($(".qrcode").length){new QRCode($(".qrcode")[0],{"useSVG":true,"text":window.location.href.replace(/#\d*$/,"")});}}});</script></main></body></html>

@@ -5,8 +5,7 @@ Re-annotating the Drosophila Testis&amp;rsquo; Transcriptome .footer[ - October 
 ]
 .fr.db.w-50pct[ - Contact: - jfear - justin.fear@nih.gov - geneticsunderground.com ]
 &amp;ndash;
-Project Code .fl.db.w-50pct[
-SRA
+Project Code .fl.db.w-50pct[ SRA
 jfear/ncbi_remap ] .fr.db.w-50pct[
 PacBio
 jfear/dmel_pacbio
