@@ -75,13 +75,19 @@ layout: true
 
 # Drosophila genome
 
-![](/sra_presentations/images/drosophila_genome.png# w-70pct center db absolute)
+![](/sra_presentations/images/drosophila_genome.png# w-70pct center db absolute t-2-12th)
+
+![](/sra_presentations/images/drosophila_genome_track.png# w-70pct center db absolute b-0)
 
 ---
 
-# Testis Biased Gene Expression
+# Testis-biased Gene Expression
 
-.fl.db.w-40pct[Most differences between males and females is due to testis-biased expression.]
+.fl.db.w-40pct[
+Most differences between males and females are due to testis-biased expression.
+
+The testis uniquely expresses a large number of transcripts that are required for spermatogenesis.
+]
 
 ![](/sra_presentations/images/testis_biased_expression.png# db w-50pct fr)
 
@@ -90,11 +96,22 @@ layout: true
 ]
 ---
 
-# Objectives
+# .dn[Objectives]
 
-Use available RNA-Seq data to generate *D. melanogaster* testis specific transcriptome assembly.
+.w-90pct.absolute.t-3.pa-3.ba.br-5.bg-darkred.color-white[
+## Problem:
 
-Use PacBio data for validation of novel transcripts.
+Testis transcripts are under-represented in current annotations.
+]
+
+.w-90pct.absolute.b-2.pa-3.ba.br-4.bg-darkgreen.color-white[
+## Objectives:
+
+1. Transcriptome assembly using publicly available testis-specific RNA-Seq data.
+
+2. Transcriptome assembly using testis-specific PacBio data.
+
+]
 
 ---
 
@@ -144,6 +161,12 @@ layout: true
 
 ---
 
+# .dn[GEO Submission]
+
+![](/sra_presentations/images/geo_submission.png# w-7-12th absolute t-0 center)
+
+---
+
 # .dn[Metadata Workflow]
 
 ![](/sra_presentations/images/downstream_biometa.svg)
@@ -152,8 +175,8 @@ layout: true
 
 # Testis RNA-Seq (109 samples)
 
-&lt;!-- Summary of testis RNA-Seq data --&gt;
-![](/sra_presentations/images/testis_selection.svg)
+![](/sra_presentations/images/testis_corr.svg# w-50pct absolute l-0 b-0)
+![](/sra_presentations/images/testis_pca.svg# w-50pct absolute r-0 b-2)
 
 ---
 
@@ -162,7 +185,6 @@ layout: true
 .w-30pct.db[Testis RNA-Seq data is used to assembly testis-specific transcriptome.]
 
 ![](/sra_presentations/images/stringtie.png# w-70pct absolute t-0 r-0)
-&lt;!-- Stringtie assembly info --&gt;
 
 .footer[
 - Pertea et al. 2015. *Nature Biotechnology*
@@ -170,29 +192,44 @@ layout: true
 
 ---
 
-# Testis Assembly
+# Testis Assembly (SRA &#43; StringTie)
+
+.db.absolute.t-10pct.l-1[
+![](/sra_presentations/images/merged_genes.png)
+![](/sra_presentations/images/huge_introns.png)
+]
+
+.absolute.b-1.l-5-12th[
+| category      | count  |
+| ------------- | ------ |
+| Novel Exons   | 44,155 |
+| Novel Introns | 26,307 |
+| Novel Loci    | 12,129 |
+]
 
 ---
-
 layout: true
 
 .header[
-
 - PacBio Validation
-
 ]
 
 ---
 
 # PacBio Samples
 
-| sample            | machine | # FLNC |
-| ----------------- | ------- | ------ |
-| Adult male        | Sequell | 10101  |
-| Adult testis R1   | Sequell | 10101  |
-| Adult testis R2   | Sequell | ---    |
-| Larval testis TR1 | Sequell | 10101  |
-| Larval testis TR2 | Sequell | ---    |
+.db.absolute.l-3-12th[
+| sample            | machine      | # HQ Polished |
+| ----------------- | ------------ | ------------- |
+| Adult male        | PacBio RS II | 12,565        |
+| Adult testis R1   | PacBio RS II | 12,448        |
+| Adult testis R2   | Sequel II    | ---           |
+| Larval testis TR1 | Sequel       | 83,066        |
+| Larval testis TR2 | Sequel II    | ---           |
+]
+
+![](https://www.g3journal.org/content/ggg/7/9/3145/F1.large.jpg# w-20pct db absolute l-4 b-1)
+![](/sra_presentations/images/larval_testis.png# w-50pct db absolute b-1 r-1)
 
 ---
 
@@ -204,10 +241,37 @@ layout: true
 
 # Adult Validation
 
+![](/sra_presentations/images/adult_testis_sqanti.png# w-7 absolute b-0 r-0)
+
+.w-40pct[
+PacBio (RS II) adult testis samples captured ~8k isoforms.
+]
+
+| category      | count  |
+| ------------- | ------ |
+| Novel Exons   | 225 |
+| Novel Introns | 236 |
+| Novel Loci    | 43 |
 
 ---
 
-# Larval Validation
+# .fs-90[Larval Validation]
+
+![](/sra_presentations/images/larval_testis_sqanti.png# w-7 absolute b-0 r-0)
+
+.w-4-12th[
+PacBio (Sequel) larval testis samples captured ~36k isoforms.
+]
+
+| category      | count  |
+| ------------- | ------ |
+| Novel Exons   | 2,840 |
+| Novel Introns | 2,242 |
+| Novel Loci    | 707 |
+
+---
+
+# .dn[Visualization]
 
 ---
 layout: true
