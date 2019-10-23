@@ -118,10 +118,9 @@ Testis transcripts are under-represented in current annotations.
 .w-90pct.absolute.b-2.pa-3.ba.br-4.bg-darkgreen.color-white[
 ## Objectives:
 
-1. Transcriptome assembly using publicly available testis-specific RNA-Seq data.
+1. Use testis-specific RNA-Seq data to build a testis-specific transcriptome.
 
-2. Transcriptome assembly using testis-specific PacBio data.
-
+2. Use testis-specific PacBio data to build/validate a testis-specific transcriptome.
 ]
 
 ---
@@ -154,33 +153,43 @@ layout: true
 
 ---
 
-# SraMongo
+# .absolute.t-0.w-100pct.center[SRA Project Overview]
 
-![](/sra_presentations/images/sramongo_website.png)
-
----
-
-# .dn[Re-processing Workflow]
-
-![](/sra_presentations/images/aln_workflow.svg)
+![](/sra_presentations/images/schematic.svg# absolute w-8 t-10pct)
 
 ---
 
-# Alignment Workflow cont.
+# .absolute.t-0.w-100pct.center[Technical Metadata]
+
+![](/sra_presentations/images/data_driven_strandedness.png# absolute w-50pct l-0 t-4-12th)
+
+![](/sra_presentations/images/data_driven_lib_strategy.svg# w-50pct absolute r-0)
+
+---
+
+# Quality Control
 
 ![](/sra_presentations/images/mapping.svg)
-
----
-
-# .dn[GEO Submission]
-
-![](/sra_presentations/images/geo_submission.png# w-7-12th absolute t-0 center)
 
 ---
 
 # .dn[Metadata Workflow]
 
 ![](/sra_presentations/images/downstream_biometa.svg)
+
+---
+
+# Data Accessibility
+
+![](/sra_presentations/images/geo_submission.png# w-7-12th absolute t-0 r-1)
+
+.fl.w-40pct[
+We are releasing all data to GEO.
+
+* Coverage Counts
+* BigWig Tracks
+* Sample Metadata
+]
 
 ---
 
@@ -246,11 +255,12 @@ layout: true
 
 # Iso-Seq Workflow
 
-<!-- Workflow enough details to get feedback -->
+![](/sra_presentations/images/smart_link.png# w-50pct)
+![](/sra_presentations/images/pacbio_workflow.svg# w-3-12th absolute t-0 r-2-12th)
 
 ---
 
-# Adult Validation
+# Adult Testis
 
 ![](/sra_presentations/images/adult_testis_sqanti.png# w-7 absolute b-0 r-0)
 
@@ -258,15 +268,15 @@ layout: true
 PacBio (RS II) adult testis samples captured ~8k isoforms.
 ]
 
-| category      | count  |
-| ------------- | ------ |
-| Novel Exons   | 225 |
-| Novel Introns | 236 |
-| Novel Loci    | 43 |
+| category      | count |
+| ------------- | ----- |
+| Novel Exons   | 225   |
+| Novel Introns | 236   |
+| Novel Loci    | 43    |
 
 ---
 
-# .fs-90[Larval Validation]
+# .fs-90[Larval Testis]
 
 ![](/sra_presentations/images/larval_testis_sqanti.png# w-7 absolute b-0 r-0)
 
@@ -274,15 +284,31 @@ PacBio (RS II) adult testis samples captured ~8k isoforms.
 PacBio (Sequel) larval testis samples captured ~36k isoforms.
 ]
 
-| category      | count  |
-| ------------- | ------ |
+| category      | count |
+| ------------- | ----- |
 | Novel Exons   | 2,840 |
 | Novel Introns | 2,242 |
-| Novel Loci    | 707 |
+| Novel Loci    | 707   |
 
 ---
 
-# .dn[Visualization]
+# .w-100pct.absolute.t-0.center[Similar Structures]
+
+![](/sra_presentations/images/track_fb_st_pb_similar.png# w-100pct absolute b-0 l-0)
+
+---
+
+# New Structures
+
+![](/sra_presentations/images/track_fb_st_pb_new1.png# w-100pct absolute l-0 t-0)
+
+![](/sra_presentations/images/track_fb_st_pb_new_panel.png# w-100pct absolute l-0 b-0)
+
+---
+
+# .w-100pct.absolute.t-0.center[New Larval Only Structures]
+
+![](/sra_presentations/images/track_fb_st_pb_new_larval.png# w-100pct absolute l-0 t-4)
 
 ---
 layout: true
